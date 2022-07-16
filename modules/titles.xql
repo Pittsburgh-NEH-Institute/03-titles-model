@@ -1,20 +1,20 @@
 xquery version "3.1";
 
-(: 
- : Building on day 02 we go forward with the model to produce a title listing
- :
- :)
+(:==========
+Part of pr-app
+Build model (in model namespace, with "m:" prefix) for titles list
+==========:)
 
-(:===
+(:==========
 Declare namespaces
-==:)
+==========:)
 declare namespace hoax = "http://obdurodon.org/hoax";
 declare namespace m = "http://www.obdurodon.org/model";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-(:===
+(:==========
 Declare global variables to path
-===:)
+=======∏===:)
 declare variable $exist:root as xs:string := 
     request:get-parameter("exist:root", "xmldb:exist:///db/apps");
 declare variable $exist:controller as xs:string := 

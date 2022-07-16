@@ -1,4 +1,14 @@
 xquery version "3.1";
+
+(:==========
+Generic controller that can be used for other apps
+The model is built with XQuery inside the modules collection
+The view is built with XQuery inside the view collection
+Filenames must correspond as x.xql (model) and x-to-html.xql (view)
+    e.g. index.xql (model) and index-to-html.xql (view)
+Main page must be called index
+==========:)
+
 declare namespace html="http://www.w3.org/1999/xhtml";
 
 declare variable $exist:root external;
